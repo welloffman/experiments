@@ -1,0 +1,30 @@
+.index-view {
+
+	.projects-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		.project {
+			border: 1px solid @color-light-gray2;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			background-color: @color-light-gray5;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			letter-spacing: 2px;
+			text-decoration: none;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+				border: 1px solid @color-light-gray;
+			}
+		}
+	}
+}

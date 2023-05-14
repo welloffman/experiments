@@ -1,0 +1,45 @@
+.calc-view {
+	font-family: Roboto Black;
+	font-size: 60px;
+
+	.operation {
+		height: 0px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-left: -40px;
+	}
+
+	.line {
+		height: 2px;
+		width: 100%;
+		background-color: black;
+		padding: 0 20px;
+		margin-left: -20px;
+	}
+
+	.row {
+		display: flex;
+		justify-content: flex-end;
+
+		&.number2 {
+			justify-content: flex-end;
+		}
+
+		.item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 36px;
+			height: 64px;
+
+			&.cursor {
+				background-color: @color-light-gray4;
+			}
+
+			&.error {
+				color: @color-red;
+			}
+		}
+	}
+}

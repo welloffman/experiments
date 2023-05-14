@@ -1,0 +1,5 @@
+[
+	"/js/libs/underscore-min.js",
+	"/js/libs/moment-with-locales.min.js",
+	"/js/libs/jquery-3.4.1.min.js"
+]

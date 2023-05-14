@@ -1,0 +1,63 @@
+.keyboard-view {
+	display: flex;
+
+	.right {
+		margin-left: 50px;
+	}
+
+	.row {
+		display: flex;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: @color-blue2;
+			color: @color-green2;
+			font-family: Roboto Black;
+			font-size: 60px;
+			width: 70px;
+			height: 70px;
+			margin-right: 10px;
+			cursor: pointer;
+			line-height: 1;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&.enter {
+				width: 150px;
+				font-size: 50px;
+			}
+
+			&.clear {
+				width: 230px;
+				font-size: 50px;
+				background-color: @color-red2;
+				color: white;
+
+				&:hover {
+					background-color: @color-red;
+				}
+
+				&:active {
+					background-color: @color-red2;
+				}
+			}
+
+			&:hover {
+				background-color: @color-blue3;
+			}
+
+			&:active {
+				background-color: @color-blue2;
+			}
+		}
+	}
+}

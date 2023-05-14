@@ -1,0 +1,19 @@
+Vue
+
+Директивы-аттрибуты:
+v-bind:title="message"
+v-if:seen
+v-for="todo in todos"
+<button v-on:click="reverseMessage">Перевернуть сообщение</button>
+<input v-model="message">
+
+
+Компонент:
+Vue.component('todo-item', {
+  template: '<li>Это одна задача в списке</li>'
+})
+
+var app = new Vue(...)
+<ol>
+  <todo-item></todo-item>
+</ol>

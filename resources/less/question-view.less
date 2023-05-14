@@ -1,0 +1,30 @@
+.question-view {
+	.mode-show {
+		background-color: @color-light-gray9;
+		padding: 10px;
+
+		pre {
+			margin: 0;
+			white-space: pre-wrap;
+		}
+
+		.answer {
+			padding-top: 10px;
+			color: @color-gray4;
+		}
+
+		.edit, .delete {
+			display: none;
+		}
+
+		&:hover {
+			.edit, .delete {
+				display: block;
+			}
+		}
+
+		.buttons {
+			min-height: 28px;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.calc-div-view {
+	display: flex;
+
+
+	.left .row, .right .row {
+		justify-content: flex-start;
+	}
+
+	.left {
+		.line {
+			padding: 0;
+			margin-left: 0;
+		}
+
+		.number1 {
+			padding: 0 10px 0 0;
+			border-bottom: 2px solid white;
+		}
+	}
+
+	.right {
+		.number2 {
+			justify-content: flex-start !important;
+			border: 2px solid black;
+			border-top: none;
+			border-right: none;
+			padding: 0 0 0 10px;
+		}
+	}
+}
